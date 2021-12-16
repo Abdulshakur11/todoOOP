@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Todo</h1>
+  <form id="forma">
+    <input type="text" name="todo" id="todo">
+    <input type="submit" value="Add" id="add">
+  </form>
+  <ul id="todo-list" style="list-style:decimal;">
+  
+  </ul>
+  <template id="todo-template">
+    <li id="todo-item">
+      <span>
+        <input type="checkbox" name="todo" id="todo-status" class="todo-status">
+      </span>
+      <span>
+        <label for="todo-title" id="todo-title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </label>
+      </span>
+      <span>
+        <button type="button" name="button" id="todo-delete">
+          Delete
+        </button>
+      </span>
+    </li>
+  </template>
+  <script src="./todo.js"></script>
+</body>
+</html>
